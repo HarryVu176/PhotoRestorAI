@@ -1,0 +1,145 @@
+/* Typography System */
+@import './styles/typography.css';
+
+/* Custom animations for Magic features */
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.3s ease-in-out;
+}
+
+@keyframes scale-in {
+  from { 
+    opacity: 0; 
+    transform: scale(0.95);
+  }
+  to { 
+    opacity: 1; 
+    transform: scale(1);
+  }
+}
+
+.animate-scale-in {
+  animation: scale-in 0.3s ease-out;
+}
+
+/* Magic button special effects */
+@keyframes magic-pulse {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(168, 85, 247, 0.6), 0 0 40px rgba(236, 72, 153, 0.3);
+  }
+}
+
+.magic-button:hover {
+  animation: magic-pulse 2s infinite;
+}
+
+/* Comparison slider custom styles */
+.comparison-slider {
+  position: relative;
+  overflow: hidden;
+  user-select: none;
+  cursor: ew-resize;
+}
+
+.comparison-slider img {
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Smooth transitions for tab switches */
+.tab-content {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Magic wand rotation animation */
+@keyframes magic-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(12deg);
+  }
+}
+
+.magic-wand:hover {
+  animation: magic-rotate 0.3s ease-in-out;
+}
+
+/* Mobile-friendly tap targets */
+@media (max-width: 768px) {
+  button, .clickable {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Floating action buttons spacing */
+  .floating-actions {
+    gap: 16px;
+  }
+  
+  /* Mobile toolbar positioning */
+  .mobile-toolbar {
+    margin-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  
+  /* Touch-friendly tooltips */
+  .tooltip-mobile {
+    display: none;
+  }
+  
+  /* Better mobile image handling */
+  img {
+    max-width: 100%;
+    height: auto;
+    touch-action: manipulation;
+  }
+}
+
+/* Improved fade-in animation */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.3s ease-out;
+}
+
+/* Floating button pulse effect */
+@keyframes float-pulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 4px 20px rgba(59, 130, 246, 0.3);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 8px 30px rgba(59, 130, 246, 0.5);
+  }
+}
+
+.floating-pulse {
+  animation: float-pulse 2s ease-in-out infinite;
+}
