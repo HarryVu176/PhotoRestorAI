@@ -91,7 +91,7 @@ const Header: React.FC<HeaderProps> = ({ onLogoClick }) => {
               </span>
               <span>by{' '}
                 <a
-                  href="https://github.com/danvufs"
+                  href="https://github.com/harryvu176"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-400 hover:text-blue-300 transition-colors hover:underline"
@@ -147,7 +147,7 @@ const Header: React.FC<HeaderProps> = ({ onLogoClick }) => {
                 </span>
                 <span>Developed by{' '}
                   <a
-                    href="https://github.com/danvufs"
+                    href="https://github.com/harryvu176"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-blue-400 hover:text-blue-300 transition-colors hover:underline"

@@ -40,41 +40,25 @@ Professional photo restoration and enhancement powered by Google's Gemini 2.5 Fl
    ```bash
    cp .env.example .env
    ```
-   
-   **Get your FREE OpenRouter API key:**
-   - Visit https://openrouter.ai/keys
+   **Use Gemini API Key:**
+   - Visit https://gemini.ai/
    - Sign up for a free account
-   - Create a new API key
-   - Add it to your `.env` file:
-   ```
-   OPENROUTER_API_KEY=your_key_here
-   ```
+  ```
+  VITE_GEMINI_API_KEY=your_key_here
+  ```
 
-4. **Configure Firebase (optional for auth):**
-   - Create a Firebase project at https://console.firebase.google.com
-   - Enable Authentication with Google provider
-   - Add your Firebase config to `.env`
-
-5. **Run the development server:**
+4.**Run the development server:**
    ```bash
    npm run dev
    ```
 
-6. **Open your browser:**
+5.**Open your browser:**
    Navigate to `http://localhost:5173`
-
-## 💰 Cost-Effective AI
-
-This app uses **OpenRouter's FREE tier** for Gemini 2.5 Flash Image Preview:
-- ✅ **No API costs** for personal use
-- ✅ **Same quality** as Google AI Studio
-- ✅ **No rate limits** for reasonable usage
-- ✅ **Easy setup** with OpenRouter API key
 
 ## 🛠️ Technology Stack
 
 - **Frontend**: React 19, TypeScript, Tailwind CSS
-- **AI**: Google Gemini 2.5 Flash via OpenRouter API
+- **AI**: Google Gemini Nano Banana
 - **Auth**: Firebase Authentication
 - **Image Processing**: HTML5 Canvas, React Image Crop
 - **Build**: Vite
@@ -83,16 +67,8 @@ This app uses **OpenRouter's FREE tier** for Gemini 2.5 Flash Image Preview:
 ## 📝 Environment Variables
 
 ```bash
-# Required: OpenRouter API for AI image processing
-OPENROUTER_API_KEY=your_openrouter_api_key
-
-# Optional: Firebase for authentication
-VITE_FIREBASE_API_KEY=your_firebase_api_key
-VITE_FIREBASE_AUTH_DOMAIN=your-project.firebaseapp.com
-VITE_FIREBASE_PROJECT_ID=your-project-id
-VITE_FIREBASE_STORAGE_BUCKET=your-project.appspot.com
-VITE_FIREBASE_MESSAGING_SENDER_ID=123456789
-VITE_FIREBASE_APP_ID=your-app-id
+# Required: Gemini API Key for Nano Banana
+VITE_GEMINI_API_KEY=your_key_here
 ```
 
 ## 🎯 Usage
@@ -124,11 +100,3 @@ npm run build
 ```bash
 npm run preview
 ```
-
-## 📄 License
-
-Apache 2.0 License - see [LICENSE](LICENSE) file for details.
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.

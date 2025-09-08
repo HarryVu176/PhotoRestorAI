@@ -100,7 +100,7 @@ const Footer: React.FC = () => {
           <div className="text-gray-400 text-sm text-center sm:text-left">
             <p className="font-medium">© 2025 PhotoRestorAI. Developed by{' '}
               <a 
-                href="https://github.com/danvufs"
+                href="https://github.com/harryvu176"
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-blue-400 font-semibold hover:text-blue-300 transition-colors hover:underline"
